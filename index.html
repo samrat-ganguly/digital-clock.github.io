@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dc.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="dc.js"></script>
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            <div class="hand hour" hour-hand></div>
+            <div class="hand min" min-hand></div>
+            <div class="hand sec" sec-hand></div>
+            <div class="number number1">1</div>
+            <div class="number number2">2</div>
+            <div class="number number3">3</div>
+            <div class="number number4">4</div>
+            <div class="number number5">5</div>
+            <div class="number number6">6</div>
+            <div class="number number7">7</div>
+            <div class="number number8">8</div>
+            <div class="number number9">9</div>
+            <div class="number number10">10</div>
+            <div class="number number11">11</div>
+            <div class="number number12">12</div>
+        </div>
+        <div class="overlay a"></div>
+        <div class="overlay b"></div>
+        <div class="overlay c"></div>
+        <div class="overlay d"></div>
+        <div class="overlay e"></div>
+        <div class="overlay f"></div>
+        <div class="overlay g"></div>
+        <div class="overlay h"></div>
+        <div class="overlay i"></div>
+    </div>
+</body>
+<script>
+    ScrollReveal().reveal(".a", {
+        duration: 2500,
+        distance: "50px",
+        origin: "top",
+    });
+    ScrollReveal().reveal(".b", {
+        duration: 1000,
+        delay: 500,
+    });
+    ScrollReveal().reveal(".c", {
+        duration: 1500,
+        delay: 700,
+        distance: "40px",
+        origin: "bottom",
+    });
+    ScrollReveal().reveal(".d", {
+        duration: 1500,
+        delay: 1000,
+        distance: "40px",
+        origin: "right",
+    });
+    ScrollReveal().reveal(".e", {
+        duration: 1000,
+        delay: 300,
+    });
+
+    ScrollReveal().reveal(".clock", {
+        duration: 1500,
+        delay: 500,
+    });
+</script>
+
+</html>
